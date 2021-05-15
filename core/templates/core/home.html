@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class=" mt-5" >
+<div class="text-center">
+    <img src="{% static 'core/images/img2.jpg' %}" alt="pp"
+    class="img-thumbnail" width="250px" height="150px">
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello,</h1>
+    <div class="px-4" style="line-height:2rem; ">
+    <p style="text-indent:100px;">I am <b class="text-warning">Sara</b>Web Developer with 8 years of experience in
+    designing and developing user interfaces, testing, debugging, and training staff
+    within eCommerce technologies.Proven ability in optimizing web functionality
+    that improve data retrieval and workflow efficiencies.<br>
+    Developed dynamic and interactive website that ensured high traffic, page views,
+    and User Experience, resulting in 40% increase in sales revenue
+    Oversaw full lifecycle of software development for 9 projects with 100%
+    on time delivery while staying 5% under budget
+    </p>
+    </div>
+</div>
+    <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+
+</div>
+{% endblock content %}
